@@ -18,7 +18,12 @@ function acudit() {
 
       .then(data => {
           console.log(data);
-         
+          if (data.type == "twopart") {
+            document.getElementById("text").innerHTML = data.setup + " " + data.delivery;
+        
+          } else {
+            document.getElementById("text").innerHTML = data.joke;
+          }
         }
       )
 }
