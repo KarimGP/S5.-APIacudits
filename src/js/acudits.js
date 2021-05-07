@@ -5,7 +5,13 @@ function acudit() {
 	
 	if (random == 1) {
 		url = "https://v2.jokeapi.dev/joke/Programming";
-  } 
+  } else if (random == 2) {
+    url = "https://v2.jokeapi.dev/joke/Programming";
+
+  } else if (random == 3) {
+    url = "https://api.chucknorris.io/jokes/random";
+  
+  }
 
   fetch(url, {
       method: "GET",
